@@ -1,0 +1,20 @@
+.Dictionary form {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.Word {
+    margin: 30px 0;
+}
+
+.PartOfSpeech {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.Definition {
+    font-size: 13px;
+    line-height: 5px;
+
+}

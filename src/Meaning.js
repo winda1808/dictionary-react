@@ -1,15 +1,16 @@
 import React from 'react';
+import './Dictionary.css';
 
 
 
 export default function Meaning(props) {
     return (
         <div className="Meaning">
-            <h3>{props.meaning.partOfSpeech}</h3>
+            <h3 className="PartOfSpeech">{props.meaning.partOfSpeech}</h3>
             {props.meaning.definitions.map(function (definition, index) {
                 return( 
                 <div key={index}>
-                    <p>
+                    <p className="Definitions">
                         {definition.definition}
                         {definition.example}
                         </p>
@@ -24,5 +25,5 @@ export default function Meaning(props) {
 }
 
 
-// <p>{props.meaning.definitions[0].definition}</p>
+//<p>{props.meaning.definitions[0].definition}</p>
 //<p>{props.meaning.definitions[0].example}</p>

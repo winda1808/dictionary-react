@@ -11,7 +11,6 @@ let [results, setResults] = useState(null);
 
     function handleResponse(response) {
         setResults(response.data[0]);
-        //console.log(response.data[0].meanings[0].definition[0]);
         
 }
     function search(event) {
@@ -30,7 +29,7 @@ let [results, setResults] = useState(null);
     return (
         <div className="Dictionary">
             <form onSubmit={search}>
-                <input type="search" autoFocus={true} onChange={handleKeywordChange}/>
+                <input type="search" autoFocus={true} onChange={handleKeywordChange} placeholder="What words do you want to look up?" size={50}/>
             </form>
             <Results results={results} />
         </div>

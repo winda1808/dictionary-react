@@ -14,7 +14,9 @@ export default function App() {
         <Dictionary />
       </main>
       <footer className="footer">
-        open source code by Winda Andhini
+        <a href="https://github.com/winda1808/dictionary-react" className="RepositoryLink">
+        Coded by Winda Andhini
+        </a>
       </footer>
     </div>
     </div>
