@@ -4,7 +4,8 @@ export default function Example(props) {
     if (props.example) {
     return (
     <div className="Example">
-  Example: {props.example}
+   <strong className="Example">Example: </strong> 
+   {props.example}
     </div>
     );
 } else {
