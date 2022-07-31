@@ -1,11 +1,12 @@
 import React from 'react';
+import './Dictionary.css';
 
 export default function Example(props) {
     if (props.example) {
     return (
     <div className="Example">
-   <strong className="Example">Example: </strong> 
-   {props.example}
+   <strong>Example: </strong> 
+   <p>"{props.example}"</p>
     </div>
     );
 } else {

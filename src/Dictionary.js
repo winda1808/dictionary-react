@@ -28,9 +28,23 @@ let [results, setResults] = useState(null);
 
     return (
         <div className="Dictionary">
+            <section>
             <form onSubmit={search}>
-                <input type="search" autoFocus={true} onChange={handleKeywordChange} placeholder="What words do you want to look up?" size={50}/>
+                <input 
+                type="search"
+                autoFocus="on"
+                className="form-control"
+                onChange={handleKeywordChange} 
+                placeholder="suggested words: cat, rose, halloween, pilot..." 
+                size={50}
+                />
+        <span className="input-group-btn">
+          <button type="submit" className="btn Search-btn">
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </span>
             </form>
+            </section>
             <Results results={results} />
         </div>
     )
