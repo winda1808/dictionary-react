@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import hello from "./hello.png";
+import title from "./title.png";
 import Dictionary from './Dictionary';
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
     <div className="App">
       <div className="container">
       <header className="App-header">
-        <img src={hello} alt="placeholder" className="Image img-fluid"/>
+        <img src={title} alt="placeholder" className="Image img-fluid"/>
       </header>
       <main>
         <Dictionary />
